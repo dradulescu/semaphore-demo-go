@@ -40,7 +40,7 @@ blocks:
           # Store the binary in cache to reuse in further blocks.
           # More about caching: https://docs.semaphoreci.com/article/54-toolbox-reference#cache
           - mkdir bin
-          - mv webServer bin
+          - mv webServer bin/
           - artifact push workflow bin
           - ls -lah
           - ls -lah bin
