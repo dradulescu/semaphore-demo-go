@@ -82,6 +82,6 @@ blocks:
           - artifact pull workflow bin
           - ls -lah
           - ls -lah bin
-          - ./bin/webServer 8001 &
+          - ./bin webServer 8001 &
           - curl --silent localhost:8001/time | grep "The current time is"
 
